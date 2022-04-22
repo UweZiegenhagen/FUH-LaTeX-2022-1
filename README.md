@@ -29,7 +29,9 @@ Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
 ## Was wird benötigt
 
 * Ein Rechner (Laptop, Desktop) mit Windows oder MacOS (Linux geht auch, wenn die Kommunikationssoftware dafür verfügbar ist)
-* TeX Live 2022 herunterladen und installieren von tug.org/texlive. Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oft nicht aktuell. Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
+* TeX Live 2022 herunterladen und installieren von tug.org/texlive. Eine Anleitung habe ich unter https://www.youtube.com/watch?v=k9KhuZz7k-Q veröffentlicht.
+
+Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oft nicht aktuell. Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
 * Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten Editor, den ich gern benutze. TeX Studio und Visual Studio Code (mit der ``LaTeX Workshop`` Erweiterung von James Yu) kann ich ebenfalls sehr empfehlen.
 * Emacs mit AucTeX ist ebenfalls eine mächtige Kombination, auch für vim gibt es wohl LaTeX-Erweiterungen, die ich aber nicht kenne.
 * Grundkenntnisse von Git bzw. Github sind nicht verkehrt, da alle Dateien im Github liegen.
