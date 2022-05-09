@@ -22,9 +22,8 @@ Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir Big
 * **Tag 1**: 04.06.2021
 * **Tag 2**: 11.06.2021
 * **Tag 3**: 18.06.2021
-* **Tag 4**: 25.06.2021
 
-Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr.
+Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 16:20 Uhr, in Summe also 16 Stunden.
 
 ## Was wird benötigt
 
