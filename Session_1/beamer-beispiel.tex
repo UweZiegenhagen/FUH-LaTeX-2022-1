@@ -1,11 +1,16 @@
 \documentclass[ngerman]{beamer}
 
 \usepackage[]{babel}
+\usepackage[]{blindtext}
+
+\usetheme{PaloAlto}
 
 \title{Meine erste Präsentation}
 \author{Uwe Ziegenhagen}
 \date{Köln, den \today}
 \institute{Dante e.V.}
+
+\setbeamerfont{caption}{size=\footnotesize}
 
 \begin{document}
 
@@ -34,13 +39,112 @@
 \item 
 \item 
 \item 
-\item 
-\item 
 \end{itemize}
+
+\begin{alert}{Hinweise}
+{\scriptsize \blindtext}
+\end{alert}
 
 
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\begin{enumerate}
+\item 
+\item 
+\item 
+\item 
+\item 
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\blindtext
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\begin{equation}
+-\frac{p}{2} \pm 
+\sqrt{ 
+ \left(
+    \frac{p}{2}
+ \right)^2 -q 
+}
+\end{equation}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{./Bilder/Katze.jpg}
+\caption{Schneeteufel}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\begin{columns}
+\begin{column}{0.495\textwidth}
+\begin{itemize}
+\item a
+\item b
+\item c
+\item d
+\item e
+\end{itemize}
+\end{column}
+\begin{column}{0.495\textwidth}
+\begin{itemize}
+\item f
+\item g
+\item h
+\item i
+\item j
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Titel der Folie}
+\framesubtitle{Untertitel der Folie}
+
+\begin{enumerate}
+\item<1-> abc
+\item<2> def
+\item<-3> ghi
+\item<4-> jkl
+\item<5-> mno
+\end{enumerate}
+
+
+\end{frame}
 
 
 \end{document}
