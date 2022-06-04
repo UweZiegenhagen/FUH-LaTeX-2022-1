@@ -6,14 +6,16 @@
 \usepackage{paralist}
 \usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{graphicx}
 
-\definecolor{fuh}{RGB}{150,100,100}
+\definecolor{FUH}{RGB}{150,100,100}
+\definecolor{fuh}{rgb}{0.5,0.1,0.5}
 
 \author{Donald Duck}
 \title{Hallo Fernuni Hagen}
 \date{Köln, den 23.06.2022}
 
-\newcommand{\physiker}[1]{\textsc{#1}}
+\newcommand{\physiker}[1]{\textcolor{FUH}{\textsc{#1}}}
 
 \newcommand{\Physiker}[2]{\textcolor{fuh}{\textbf{#1} \textsc{#2}}}
 
@@ -91,7 +93,7 @@
 
 
 \begin{description}
-\item[Apfel] eine Frucht vom Baum
+\item[Apfel] eine Frucht vom Baum\footnote{\blindtext}
 \item[Birne] auch eine Frucht vom Baum
 
 \begin{description}
@@ -119,6 +121,17 @@
 Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} gesetztes Wort. Und ich bin sowohl \textbf{\textit{fett und kursiv}} gesetzt. Ich bin ein \textsl{geneigtes}, aber nicht \textit{kursives} Wort. \textsc{Kapitälchen} nutzt man auch gelegentlich. \physiker{Albert Einstein} war ein berühmter Physiker.
 
 \Physiker{Marie}{Curie}
+
+\includegraphics[width=2cm]{./Bilder/Katze} % Formate jpg, png, pdf
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./Bilder/Katze} % Formate jpg, png, pdf
+\end{center}
+
+
+\begin{center}
+\includegraphics[height=0.25\textheight,angle=45]{./Bilder/Katze} % Formate jpg, png, pdf
+\end{center}
 
 
 \end{document}
