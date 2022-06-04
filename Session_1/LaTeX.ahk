@@ -1,4 +1,4 @@
-:*:dlr#::Deutsches Zentrum für Luft- und Raumfahrt
+:*:fuh#::Fernuni Hagen
 
 
 :*:ch#::\chapter{{}{}}{LEFT}
