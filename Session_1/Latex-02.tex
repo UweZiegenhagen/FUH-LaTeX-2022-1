@@ -1,0 +1,62 @@
+\documentclass[12pt,ngerman,parskip=full]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{esvect}
+
+\begin{document}
+
+\blindtext
+
+\textbf{\TeX-Notation}
+
+Hallo, ich bin eine Formel $a^2+b^2=c^2$ im Fließtext.
+
+Ich bin eine abgesetzte $$a^2+b^2=c^2$$  Formel. 
+
+
+\blindtext
+
+\textbf{\LaTeX-Notation} % zu empfehlen
+
+Hallo, ich bin eine Formel \(a^2+b^2=c^2\) im Fließtext.
+
+Ich bin eine abgesetzte \[a^2+b^2=c^2\]  Formel. 
+
+\begin{equation}
+-\frac{p}{2} \pm 
+\sqrt{ 
+ \left(
+    \frac{p}{2}
+ \right)^2 -q 
+}
+\end{equation}
+
+
+\begin{equation}
+\sum_{1=1}^\infty x_i \Rightarrow \int_{y=1}^{100} \prod y_i \rightarrow a^2
+\end{equation}
+
+% Schlecht!'
+\[ \overbrace{a^2 + b^2}^{1. Term} = \underbrace{c^2 - d}_{2. Term}\]
+
+%Gut, \text Befehl aus dem amsmath Paket
+\[ \overbrace{a^2 + b^2}^{\text{1. Term}} = \underbrace{c^2 - d}_{\text{2. Term}}\]
+
+
+\begin{eqnarray}
+    y & = & d\\
+     & = & c_x+d\\
+     & = & b_x^{2}+c_x+d\\
+     & = & a_x^{3}+b_x^{2}
+\end{eqnarray}
+
+\[
+\vec{a} \leftarrow \vec{abc} \times \vv{abc} % \vv kommt aus dem esvect Paket
+\]
+
+
+
+
+\end{document}
