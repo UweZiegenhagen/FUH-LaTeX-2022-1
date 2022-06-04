@@ -4,12 +4,18 @@
 \usepackage{blindtext}
 
 \usepackage{paralist}
-
 \usepackage{microtype}
+\usepackage{xcolor}
+
+\definecolor{fuh}{RGB}{150,100,100}
 
 \author{Donald Duck}
 \title{Hallo Fernuni Hagen}
 \date{Köln, den 23.06.2022}
+
+\newcommand{\physiker}[1]{\textsc{#1}}
+
+\newcommand{\Physiker}[2]{\textcolor{fuh}{\textbf{#1} \textsc{#2}}}
 
 
 \begin{document}
@@ -110,7 +116,9 @@
 
 \chapter{Irgendwas}
 
-Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} gesetztes Wort. Und ich bin sowohl \textbf{\textit{fett und kursiv}} gesetzt. Ich bin ein \textsl{geneigtes}, aber nicht \textit{kursives} Wort. \textsc{Kapitälchen} nutzt man auch gelegentlich.
+Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} gesetztes Wort. Und ich bin sowohl \textbf{\textit{fett und kursiv}} gesetzt. Ich bin ein \textsl{geneigtes}, aber nicht \textit{kursives} Wort. \textsc{Kapitälchen} nutzt man auch gelegentlich. \physiker{Albert Einstein} war ein berühmter Physiker.
+
+\Physiker{Marie}{Curie}
 
 
 \end{document}
