@@ -7,6 +7,7 @@
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 \definecolor{FUH}{RGB}{150,100,100}
 \definecolor{fuh}{rgb}{0.5,0.1,0.5}
@@ -26,6 +27,8 @@
 \tableofcontents
 
 \listoffigures
+
+\listoftables
 
 \chapter{Hallo Welt}
 
@@ -155,13 +158,23 @@ Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} ges
 
 \chapter{Tabellen}\label{ch:tabelle}
 
-\begin{tabular}{|l|c|r|p{5cm}}
-12322 & 12421 & 43241 &
-
+\begin{tabular}{|l|c|r|p{5cm}|} \hline
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \hline
+123 & 121 & 435345241 & Hallo, ich bin ein Satz, der nach fünf Zentimetern umgebrochen wird. \\ \hline
+12322 & 12421 & 43241 & Hallo, ich bin ein Satz \\ \hline
 \end{tabular}
 
 
-
+\begin{table}[h]
+\begin{center}
+\caption{Eine Tabellenüberschrift}
+\begin{tabular}{lcrp{5cm}} \toprule
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \midrule
+123 & 121 & 435345241 & Hallo, ich bin ein Satz, der nach fünf Zentimetern umgebrochen wird. \\ 
+12322 & 12421 & 43241 & Hallo, ich bin ein Satz \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
 
 \end{document}
 
