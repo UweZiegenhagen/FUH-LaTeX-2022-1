@@ -29,11 +29,15 @@
 
 \chapter{Hallo Welt}
 
+Siehe Abbildung \ref{fig:katze} auf Seite \pageref{fig:katze}, siehe auch Abschnitt \ref{sec:hauptteil}
+
+Siehe Abbildung \ref{fig:katze2} auf Seite \pageref{fig:katze2}.
+
 \section{Einleitung}
 \subsection{Das Thema an und für sich}
 \subsubsection{Literatur}
 
-\blindtext[1] 
+\blindtext[2] 
 
 \subsubsection{Stand der Forschung}
 
@@ -108,7 +112,7 @@
 \end{description}
 
 
-\section{Hauptteil}
+\section{Hauptteil}\label{sec:hauptteil}
 
 \blindtext[1] 
 
@@ -134,7 +138,7 @@ Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} ges
 \begin{figure}[h] % h = here, t = top, b = bottom, p = page
 \begin{center} % \usepackage{here} => Option 'H' für schärferes h
 \includegraphics[width=0.9\textwidth]{./Bilder/Katze.jpg} % Formate jpg, png, pdf
-\caption{Melli, die Katz}
+\caption{Melli, die Katz}\label{fig:katze}
 \end{center}
 \end{figure}
 
@@ -144,10 +148,17 @@ Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} ges
 \begin{minipage}{\textwidth}
 \begin{center}
 \includegraphics[width=0.9\textwidth]{./Bilder/Katze.jpg} % Formate jpg, png, pdf
-\captionof{figure}{Melli, die Miezekatze}
+\captionof{figure}{Melli, die Miezekatze}\label{fig:katze2}
 \end{center}
 \end{minipage}
 
+
+\chapter{Tabellen}\label{ch:tabelle}
+
+\begin{tabular}{|l|c|r|p{5cm}}
+12322 & 12421 & 43241 &
+
+\end{tabular}
 
 
 
