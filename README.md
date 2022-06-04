@@ -25,6 +25,21 @@ Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir Big
 
 Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 16:20 Uhr, in Summe also 16 Stunden.
 
+## Agenda der einzelnen Termine
+
+### Tag 1
+
+* Das erste LaTeX-Dokument
+* Standard- und KOMA-Klassen
+* Chapter, section und co.
+
+### Tag 2
+
+
+
+### Tag 3
+
+
 ## Was wird benötigt
 
 * Ein Rechner (Laptop, Desktop) mit Windows oder MacOS (Linux geht auch, wenn die Kommunikationssoftware dafür verfügbar ist)
