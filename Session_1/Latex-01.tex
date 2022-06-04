@@ -3,6 +3,8 @@
 \usepackage{babel}
 \usepackage{blindtext}
 
+\usepackage{paralist}
+
 \usepackage{microtype}
 
 \author{Donald Duck}
@@ -19,11 +21,11 @@
 
 \blindtext[1] 
 
-\begin{itemize}
+\begin{itemize} % Standard-LaTeX
 \item Hallo
 \item Fernuni
 \item Hagen
-\begin{itemize}
+\begin{itemize}[+]
 \item Hallo
 \item Fernuni
 \item Hagen
@@ -31,6 +33,20 @@
 \end{itemize}
 \item Welt
 \end{itemize}
+
+\begin{compactitem}[\%] % Paket paralist
+\item Hallo
+\item Fernuni
+\item Hagen
+\begin{compactitem}[+]
+\item Hallo
+\item Fernuni
+\item Hagen
+\item Welt
+\end{compactitem}
+\item Welt
+\end{compactitem}
+
 
 \begin{enumerate}
 \item Hallo
@@ -44,6 +60,20 @@
 \end{enumerate}
 \item Welt
 \end{enumerate}
+
+\begin{compactenum}[I]
+\item Hallo
+\item Fernuni
+\item Hagen
+\begin{compactenum}[A.]
+\item Hallo
+\item Fernuni
+\item Hagen
+\item Welt
+\end{compactenum}
+\item Welt
+\end{compactenum}
+
 
 \begin{description}
 \item[Apfel] eine Frucht vom Baum
