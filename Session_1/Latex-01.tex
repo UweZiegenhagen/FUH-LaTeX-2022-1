@@ -25,6 +25,8 @@
 
 \tableofcontents
 
+\listoffigures
+
 \chapter{Hallo Welt}
 
 \section{Einleitung}
@@ -124,15 +126,36 @@ Hallo, ich bin ein \textbf{fettgedrucktes} Wort. Ich bin ein \textit{kursiv} ges
 
 \includegraphics[width=2cm]{./Bilder/Katze} % Formate jpg, png, pdf
 
-\begin{center}
-\includegraphics[width=0.9\textwidth]{./Bilder/Katze} % Formate jpg, png, pdf
+
+\chapter{Bilder einbetten}
+
+\blindtext
+
+\begin{figure}[h] % h = here, t = top, b = bottom, p = page
+\begin{center} % \usepackage{here} => Option 'H' für schärferes h
+\includegraphics[width=0.9\textwidth]{./Bilder/Katze.jpg} % Formate jpg, png, pdf
+\caption{Melli, die Katz}
 \end{center}
+\end{figure}
+
+\blindtext[2] fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf fssd fsdsdfsdf s sdfsdfsdf 
+
+
+\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{./Bilder/Katze.jpg} % Formate jpg, png, pdf
+\captionof{figure}{Melli, die Miezekatze}
+\end{center}
+\end{minipage}
+
+
+
+
+
+\end{document}
+
 
 
 \begin{center}
 \includegraphics[height=0.25\textheight,angle=45]{./Bilder/Katze} % Formate jpg, png, pdf
 \end{center}
-
-
-\end{document}
-
