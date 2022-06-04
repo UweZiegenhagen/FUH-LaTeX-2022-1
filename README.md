@@ -32,6 +32,9 @@ Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 16:20 Uhr, 
 * Das erste LaTeX-Dokument
 * Standard- und KOMA-Klassen
 * Chapter, section und co.
+* Bilder einbauen
+* Tabellen
+* Inhalts-, Bild- und Tabellenverzeichnisse
 
 ### Tag 2
 
