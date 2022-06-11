@@ -1,0 +1,40 @@
+
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage{nicefrac}
+\usepackage{nicematrix}
+
+\begin{document}
+
+\(a^2+b^2 = \nicefrac{c^2}{d^2}  = \frac{c^2}{d^2} \) ist eine Formel
+
+\[ a^2 + b^2 = \nicefrac{c^2}{d^2}  = \frac{c^2}{d^2} \] 
+
+\NiceMatrixOptions{cell-space-limits = 2pt}
+
+$\begin{pmatrix}
+\frac12 & -\frac12 \\
+\frac13 & \frac14 \\
+\end{pmatrix}$
+$\begin{pNiceMatrix}
+\frac12 & -\frac12 \\
+\frac13 & \frac14 \\
+\end{pNiceMatrix}$
+
+
+$A = \begin{pNiceMatrix}[baseline=2] % vertikale Position des As
+\frac{1}{\sqrt{1+p^2}} & p & 1-p \\
+1 & 1 & 1 \\
+1 & p & 1+p
+\end{pNiceMatrix}$
+
+
+\end{document}
