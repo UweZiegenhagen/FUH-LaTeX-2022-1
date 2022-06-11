@@ -1,6 +1,6 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,11 +9,120 @@
 \usepackage{graphicx}
 \usepackage{csquotes}
 \usepackage{paralist}
+
 \usepackage{xcolor}
 \usepackage{listings}
 
+\definecolor{colBack}{rgb}{1,1,0.9}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+
+\lstset{%
+    float=hbp,%
+    basicstyle=\ttfamily\footnotesize, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+    backgroundcolor=\color{colBack}, %
+    breakautoindent=true, %
+    captionpos=b,%
+    language={Python},
+    morekeywords={copyfile, write, unlink}
+}
+
+
+
+
 \begin{document}
 
+Hallo FUH
 
+\begin{lstlisting}
+import timeit
+start = timeit.default_timer()
+
+files = ['f:/willich.txt', 'f:/willich.txt',  'f:/willich.txt']
+output = 'F:/kombiniert.txt'
+
+filecount = len(files)
+print(f'Processing {filecount} files')
+ 
+with open(output, 'w') as outputfile:
+    for counter, file in enumerate(files):
+        print(counter, file)
+        with open(file, 'r') as fin:
+            data = fin.read().splitlines(True)
+
+        if counter == 0: # first file, take everything except last line
+            outputfile.writelines(data[:-1])
+        elif counter == filecount - 1: # last file, take everything except first two lines
+            outputfile.writelines(data[2:])
+
+        else: # other files, everything except first two and last line
+            outputfile.writelines(data[2:-1])
+
+stop = timeit.default_timer()
+print(f'Time: {round(stop - start, 1)} seconds')  
+\end{lstlisting}
+
+\clearpage
+
+\begin{lstlisting}[language={Python},morekeywords={default_timer,read,splitlines,writelines}]
+import timeit
+start = timeit.default_timer()
+
+files = ['f:/willich.txt', 'f:/willich.txt',  'f:/willich.txt']
+output = 'F:/kombiniert.txt'
+
+filecount = len(files)
+print(f'Processing {filecount} files')
+ 
+with open(output, 'w') as outputfile:
+    for counter, file in enumerate(files):
+        print(counter, file)
+        with open(file, 'r') as fin:
+            data = fin.read().splitlines(True)
+
+        if counter == 0: # first file, take everything except last line
+            outputfile.writelines(data[:-1])
+        elif counter == filecount - 1: # last file, take everything except first two lines
+            outputfile.writelines(data[2:])
+
+        else: # other files, everything except first two and last line
+            outputfile.writelines(data[2:-1])
+
+stop = timeit.default_timer()
+print(f'Time: {round(stop - start, 1)} seconds')  
+\end{lstlisting}
+
+Wenn ich einzelne Befehle im Fließtext highlighten möchte so kann ich dies tun: \lstinline[language={Python}]{print()}
+
+\clearpage
+
+\lstinputlisting[language={Python},linerange={5-10}]{test.py}
 
 \end{document}
