@@ -60,7 +60,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 
 * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele
 * Historie von TeX und LaTeX
-* Vorstellung von DANTE e.V.
 * Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
 * Klassen, Pakete, Umgebungen und Befehle
 * Warum man article, report und book nicht nutzen sollte -- die KOMA Klassen
@@ -68,75 +67,42 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf der Teilnehmerinnen
 * Referenzen mit ``\label`` und ``\ref``
 * Float-Objekte in LaTeX
 * Einfache Bilder einbetten, Bilderverzeichnisse
-* Tabellensatz und Tabellenverzeichnisse
+* Einfacher Tabellensatz und Tabellenverzeichnisse
+* Präsentationen mit ``Beamer``
+* LaTeX automatisieren mit ``Arara``
+* Schneller TeX mit Autohotkey & Co
+* Einfache Bibliografien -- die ``thebibliography`` Umgebung
+
 
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
-* Fragen?
-* Zusammenfassung vom 1. Termin
-* Versionisierung von Dokumenten mit git & Github
+* Vorstellung von DANTE e.V.
+* Wiederholung vom 1. Tag, Fragen beantworten
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
-* Mathematiksatz (mit und ohne ``amsmath``)
-* ``nicefrac`` und ``nicematrix``
-* Mehr zum Bilder einbetten: ``subfigure``
-* Briefe setzen mit ``scrlttr2``
-
-### Tag 3 - Bibliografien und Präsentationen
-
-* Fragen?
-* Zusammenfassung vom 2. Termin, Wiederholung
-* Satz von Lebensläufen (CVs)
-* Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
-* Schneller TeX mit Autohotkey & Co
-* Einheitensatz mit ``siunitx``
-* Tabellensatz: Am Dezimalpunkt ausrichten mit dem "S" Spaltentyp von ``siunitx``
-* Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
-* Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
-* Einfache Bibliografien -- die ``thebibliography`` Umgebung
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
 
 Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 
-### Tag 4 - Fortgeschrittenes
-
-* Fragen zum letzten Termin?
-* Präsentationen mit der ``Beamer``-Klasse
-* ``Arara`` in TeXworks konfigurieren, siehe https://www.uweziegenhagen.de/?p=2928
-
-```
-%!TEX TS-program = Arara
-% arara: pdflatex: { draft : yes }
-% arara: pdflatex: { draft : yes }
-% arara: biber
-% arara: pdflatex
-% arara: pdflatex
-```
-
-* Alternativen dazu: ``latexmk``, ``gummi`` oder eigene ``make`` Skripte
-* ``luaLaTeX`` versus ``pdflatex``, Nutzung von Systemschriften in LaTeX
-
-Wechsel von ``pdflatex`` nach ``lualatex``
-
-```
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-```
-entfernen und
-
-```
-\usepackage{fontspec}
-```
-
-hinzufügen, ggfalls noch entsprechende Schriften laden.
-
+* Briefe setzen mit ``scrlttr2``
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
-* Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
-* Schöne Matrizen mit ``nicematrix``
-* Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
-* Grafiken erstellen mit LaTeX-Paketen, Sehrsehrkurzeinführung ``TikZ``
-* Grundlagen der Automatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
+* Mehr zu Mathematiksatz (mit ``amsmath``)
+* ``nicefrac`` und ``nicematrix``
+* Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
+
+
+### Tag 3 - Bibliografien und Präsentationen
+
+* Zusammenfassung vom 2. Termin, Wiederholung
 * Lebensläufe mit ``moderncv``
-* Effizient TeXen mit ``Autohotkey``, automatischer Start mit Windows siehe https://www.autohotkey.com/docs/FAQ.htm#Startup (Skript oder Verknüpfung darauf in den Ordner C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup legen)
+* Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
+* Einheitensatz mit ``siunitx``
+* Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
+* Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
+* Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
+* Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
+* Grafiken erstellen mit LaTeX-Paketen, Kurzeinführung ``TikZ``
+* Grundlagen der Automatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
+* Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Frage-und-Antwort-Teil
 
 
@@ -153,8 +119,3 @@ Empfohlen werden:
 * Meine Briefvorlage https://www.uweziegenhagen.de/?p=3290
 * Biblatex Cheat Sheet, https://www.ctan.org/tex-archive/info/biblatex-cheatsheet
 
-## Witzige oder interessante LaTeX-Pakete
-
-* ducksay, https://ctan.mirror.norbert-ruehl.de/macros/latex/contrib/ducksay/
-* Penrose Patterns mit TikZ, https://www.ctan.org/pkg/penrose
-* pst-eucl für euklidische Geometrie https://www.ctan.org/pkg/pst-eucl
