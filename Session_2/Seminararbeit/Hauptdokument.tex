@@ -1,3 +1,6 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman,parskip=half]{scrreprt}
 
 \input{preamble}	
@@ -5,141 +8,55 @@
 \title{Hallo FUH}
 \author{Uwe Ziegenhagen}
 
+%\includeonly{Kapitel03} % berücksichtige nur Kapitel03, lasse aber die Seitenzahlen so, als ob alle Kapitel inkludiert sind.
+
 \begin{document}
-\maketitle
+
+\begin{titlepage}
+{\large\bfseries Fernuniversität Hagen \\
+Mathematisch-Naturwissenschaftliche Fakultät \\
+Lehrstuhl für Informatik}
+
+\vspace*{5cm}
+\begin{center}
+{\LARGE\bfseries\enquote{Verteilte Systeme im Zeitablauf}}
+\end{center}
+
+\vspace*{1cm}
+\begin{center}
+{\Large\bfseries Bachelorarbeit}
+\end{center}
+
+
+\begin{center}
+{\large\bfseries  vorgelegt von }
+\end{center}
+
+\begin{center}
+{\Large\bfseries Max Mustermann}
+\end{center}
+
+
+\vfill
+\begin{tabular}{ll}
+Erstgutachter: & Prof. Dr. Daniel Düsentrieb \\
+Zweitgutachterin: & Prof. Dr. Marie Curie \\
+\end{tabular}
+
+\hfill Hagen, den \today
+\end{titlepage}
+
+
 
 \tableofcontents
 
+\listoffigures
+
+
 \include{Kapitel01}
 
-\chapter{Analyse}
+\include{Kapitel02}
 
-\section{Literatur}
-\subsection{Literatur vor 1900}
-
-
-\subsubsection{Europa}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Asien}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Amerika}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsection{Literatur nach 1900}
-
-\subsubsection{Europa}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Asien}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Amerika}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-
-\section{Stand der Forschung}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\chapter{Fazit}
-
-\section{Literatur}
-\subsection{Literatur vor 1900}
-
-
-\subsubsection{Europa}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Asien}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Amerika}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsection{Literatur nach 1900}
-
-\subsubsection{Europa}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Asien}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
-
-\subsubsection{Amerika}
-
-\blindtext[3]
-
-\blindtext[3]
-
-\blindtext[3]
-
-
-\section{Stand der Forschung}
-
-\blindtext 
-
-\blindtext
-
-\blindtext
+\include{Kapitel03}
 
 \end{document}

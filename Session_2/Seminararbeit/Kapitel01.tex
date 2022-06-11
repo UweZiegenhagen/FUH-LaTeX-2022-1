@@ -9,7 +9,26 @@
 
 \blindtext 
 
+\begin{figure}[tb]
+\includegraphics[width=\textwidth]{./Bilder/Katze1.jpg}
+\caption{Miezekatze}\label{fig:miezekatze}
+\end{figure}
+
 \blindtext
+
+\begin{itemize}
+\item {\Huge Ich bin Text in Größe \enquote{Huge}}
+\item {\huge Ich bin Text in Größe \enquote{huge}}
+\item {\LARGE Ich bin Text in Größe \enquote{LARGE}}
+\item {\Large Ich bin Text in Größe \enquote{Large}}
+\item {\large Ich bin Text in Größe \enquote{large}}
+\item {\normalsize Ich bin Text in der Normalgröße (12pt)}
+\item {\small Ich bin Text in Größe \enquote{small}}
+\item {\footnotesize Ich bin Text in Größe \enquote{footnotesize}}
+\item {\scriptsize Ich bin Text in Größe \enquote{scriptsize}}
+\item {\tiny Ich bin Text in Größe \enquote{tiny}}
+\end{itemize}
+
 
 \blindtext
 
@@ -24,6 +43,22 @@
 \subsubsection{Amerika}
 
 \blindtext 
+
+\begin{figure}[tb]
+\subcaptionbox{Meine Katze\label{fig:katze1}}
+{\includegraphics[width=0.49\textwidth]{./Bilder/Katze1.jpg}
+}
+\subcaptionbox{Meine Katze nochmal\label{fig:katze2}}
+{\includegraphics[width=0.49\textwidth]{./Bilder/miau.jpg}
+}
+\caption{Mauzekatze}\label{fig:zweikatzen}
+\end{figure}
+
+Siehe Abbildung \ref{fig:katze1} auf Seite \pageref{fig:katze1}
+
+Siehe Abbildung \ref{fig:katze2} auf Seite \pageref{fig:katze2}
+
+Siehe Abbildung \ref{fig:zweikatzen} auf Seite \pageref{fig:zweikatzen}
 
 \blindtext
 
