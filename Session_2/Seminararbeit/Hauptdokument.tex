@@ -12,6 +12,45 @@
 \usepackage[style=verbose,backend=biber]{biblatex}
 \addbibresource{Literaturverzeichnis.bib} % authortitle-icomp
 
+
+
+
+% as per https://tex.stackexchange.com/questions/100479/label-appendix-as-appendix-i-ii-iii-rather-than-appendix-a-b-and-c
+
+\usepackage[page]{appendix}
+% use custom names for appendices
+
+\renewcommand{\appendixtocname}{List of appendices}
+\renewcommand{\appendixpagename}{Appendices}
+
+\makeatletter
+\let\oldappendix\appendices
+
+\renewcommand{\appendices}{%
+  \clearpage
+  \renewcommand{\thesection}{\Roman{section}}
+  % From now, everything goes to the app - file and not to the toc
+  \let\tf@toc\tf@app
+  \addtocontents{app}{\protect\setcounter{tocdepth}{1}}
+  \immediate\write\@auxout{%
+    \string\let\string\tf@toc\string\tf@app^^J
+  }
+  \oldappendix
+}%
+
+
+
+\newcommand{\listofappendices}{%
+  \begingroup
+  \renewcommand{\contentsname}{\appendixtocname}
+  \let\@oldstarttoc\@starttoc
+  \def\@starttoc##1{\@oldstarttoc{app}}
+  \tableofcontents% Reusing the code for \tableofcontents with different \contentsname and different file handle app
+  \endgroup
+}
+
+\makeatother
+
 \begin{document}
 
 \begin{titlepage}
@@ -54,6 +93,8 @@ Zweitgutachterin: & Prof. Dr. Marie Curie \\
 
 \listoffigures
 
+\listofappendices
+
 \chapter{fsdfgsd}
 
 \cite{knuth:1984}
@@ -79,6 +120,22 @@ Im Jahr \citeyear{knuth:1984} hat \citeauthor{knuth:1984} in seinem Werk \citeti
 
 
 \blindtext[100]
+
+%\chapter*{Anhang} \addcontentsline{toc}{chapter}{Anhang}
+
+
+\begin{appendices}
+    \section{My first appendix}
+    \blindtext
+    \section{My second appendix}
+    \blindtext
+
+    \section{My third appendix}
+    \blindtext
+
+\end{appendices}
+
+
 
 \printbibliography
 
