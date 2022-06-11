@@ -1,4 +1,4 @@
-\documentclass[ngerman,12pt,fromalign=center]{scrlttr2}
+\documentclass[ngerman,12pt]{scrlttr2} 
 
 \usepackage[T1]{fontenc}
 \usepackage{babel}
@@ -6,8 +6,15 @@
 \usepackage{csquotes}
 \usepackage{xcolor}
 \usepackage{blindtext}
-
 \usepackage{tgschola}
+
+\pagestyle{myheadings}
+
+\setkomavar{firsthead}{\usekomavar{fromname} \\ Entenweg 1 \\ 12346 Entenhausen/Main }
+\setkomavar{nexthead}{\usekomavar{fromname}\hfill\usekomavar{myref}}
+\setkomavar{firstfoot}{\hfill\thepage/\letterlastpage}
+\setkomavar{nextfoot}{\hfill\thepage/\letterlastpage}
+
 
 \setkomavar{fromname}{Donald Duck}
 \setkomavar{fromaddress}{Entenweg 1, 12346 Entenhausen/Main}
