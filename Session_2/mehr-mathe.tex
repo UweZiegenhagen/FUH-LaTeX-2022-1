@@ -1,5 +1,5 @@
 
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[12pt,ngerman]{scrreprt}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -11,8 +11,11 @@
 \usepackage{xcolor}
 \usepackage{nicefrac}
 \usepackage{nicematrix}
+\usepackage{tikz}
 
 \begin{document}
+
+\chapter{Einleitung}
 
 \(a^2+b^2 = \nicefrac{c^2}{d^2}  = \frac{c^2}{d^2} \) ist eine Formel
 
@@ -30,11 +33,65 @@ $\begin{pNiceMatrix}
 \end{pNiceMatrix}$
 
 
-$A = \begin{pNiceMatrix}[baseline=2] % vertikale Position des As
+\begin{equation}
+A = \begin{pNiceMatrix}[baseline=2] % vertikale Position des As
 \frac{1}{\sqrt{1+p^2}} & p & 1-p \\
 1 & 1 & 1 \\
 1 & p & 1+p
-\end{pNiceMatrix}$
+\end{pNiceMatrix}
+\end{equation}
+
+
+\begin{NiceTabular}{@{}c!{\qquad}ccc!{\qquad}ccc@{}}
+\toprule
+Rank & \Block{1-3}{First group} & & & \Block{1-3}{Second group} \\
+& 1A & 1B & 1C & 2A & 2B & 2C \\
+\midrule
+1 & 0.657 & 0.913 & 0.733 & 0.830 & 0.387 & 0.893\\
+2 & 0.343 & 0.537 & 0.655 & 0.690 & 0.471 & 0.333\\
+3 & 0.783 & 0.885 & 0.015 & 0.306 & 0.643 & 0.263\\
+4 & 0.161 & 0.708 & 0.386 & 0.257 & 0.074 & 0.336\\
+\bottomrule
+\end{NiceTabular}
+
+
+\NiceMatrixOptions{cell-space-top-limit=3pt}
+\begin{NiceTabular}{*{6}{c}}[corners,hvlines]
+& & & & A \\
+& & A & A & A \\
+& & & A \\
+& & A & A & A & A \\
+A & A & A & A & A & A \\
+A & A & A & A & A & A \\
+& A & A & A \\
+& \Block{2-2}{B} & & A \\
+& & & A \\
+\end{NiceTabular}
+
+$\begin{pNiceArray}{ccc|c}
+2 & 1 & 3 & 0 \\
+3 & 3 & 1 & 0 \\
+3 & 3 & 1 & 0
+\CodeAfter
+\tikz \draw [red] (3.5-|1) -- (3.5-|last) ;
+\end{pNiceArray}$
+
+% Erfordert drei LaTeX-Läufe
+\(
+\begin{NiceMatrix}
+\CodeBefore
+\tikz \draw [fill=red!15] (7-|4) |- (8-|5) |- (9-|6) |- cycle ;
+\Body
+1 \\
+1 & 1 \\
+1 & 2 & 1 \\
+1 & 3 & 3 & 1 \\
+1 & 4 & 6 & 4 & 1 \\
+1 & 5 & 10 & 10 & 5 & 1 \\
+1 & 6 & 15 & 20 & 15 & 6 & 1 \\
+1 & 7 & 21 & 35 & 35 & 21 & 7 & 1 \\
+1 & 8 & 28 & 56 & 70 & 56 & 28 & 8 & 1
+\end{NiceMatrix}\)
 
 
 \end{document}
