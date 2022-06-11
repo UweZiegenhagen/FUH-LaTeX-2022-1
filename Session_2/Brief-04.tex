@@ -1,0 +1,49 @@
+\documentclass[ngerman,12pt]{scrlttr2} 
+
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{tgschola}
+
+\usepackage{scrlayer-scrpage}
+
+\pagestyle{myheadings}
+
+
+\ohead{ohead} % outer head
+\ofoot{\thepage} % outer foot
+\ifoot{\today} % inner foot
+\ihead{\usekomavar{fromname}} % inner head
+\cfoot{cfoot} % center foot
+\chead{chead} % center head
+
+
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromaddress}{Entenweg 1, 12346 Entenhausen/Main}
+
+\setkomavar{subject}{Wir hungern!!!}
+
+\setkomavar{yourref}[Gehaltsabrechnung]{März 2022}
+\setkomavar{yourmail}{01.03.2022}
+
+\setkomavar{myref}{DD/01/2022}
+
+
+\begin{document}
+\begin{letter}{Dagobert Duck \\ Am Geldspeicher 1 \\ 12345 Entenhausen}
+
+\opening{Verehrter Onkel Dagobert,}
+
+mit Bestürzen musste ich erkennen, dass Ihr mein letztes Gehalt nur teilweise überwiesen habt. Bitte überweist auch den Rest, damit meine Neffen nicht hungern müssen.
+
+\blindtext[5]
+
+\closing{Hochachtungsvoll,}
+
+\encl{Foto meines leeren Magens \\ Fotos der hungrigen Neffen}
+
+\end{letter}
+\end{document}

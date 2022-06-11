@@ -9,8 +9,8 @@
 
 %\includeonly{Kapitel03} % berücksichtige nur Kapitel03, lasse aber die Seitenzahlen so, als ob alle Kapitel inkludiert sind.
 
-\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
-\addbibresource{Literaturverzeichnis.bib}
+\usepackage[style=verbose,backend=biber]{biblatex}
+\addbibresource{Literaturverzeichnis.bib} % authortitle-icomp
 
 \begin{document}
 
@@ -58,12 +58,35 @@ Zweitgutachterin: & Prof. Dr. Marie Curie \\
 
 \cite{knuth:1984}
 
+\cite{ziegenhagen:2017}
+
+\parencite{knuth:1984}
+
+\cite{ziegenhagen:2017}
+
+\cite{Bohmann:2017}
+
+Das hat Knuth\footcite{knuth:1984} in seinem Buch beschrieben.
+
+Im Jahr \citeyear{knuth:1984} hat \citeauthor{knuth:1984} in seinem Werk \citetitle{knuth:1984} beschrieben, was \TeX\ ist.
+
+
 \include{Kapitel01}
 
 \include{Kapitel02}
 
 \include{Kapitel03}
 
+
+\blindtext[100]
+
 \printbibliography
+
+\printbibliography[title={Artikel},type=article]
+
+\printbibliography[title={Bücher},type=book]
+
+
+
 
 \end{document}
