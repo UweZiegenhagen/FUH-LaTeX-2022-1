@@ -1,8 +1,6 @@
 \documentclass[12pt,ngerman,parskip=half]{scrreprt}
 
-\usepackage{babel}
-\usepackage{blindtext}
-\usepackage{microtype}
+\input{preamble}	
 
 \title{Hallo FUH}
 \author{Uwe Ziegenhagen}
@@ -10,8 +8,12 @@
 \begin{document}
 \maketitle
 
+\tableofcontents
 
-\chapter{Einleitung}
+\include{Kapitel01}
+
+\chapter{Analyse}
+
 \section{Literatur}
 \subsection{Literatur vor 1900}
 
@@ -69,12 +71,75 @@
 
 \section{Stand der Forschung}
 
+\blindtext 
 
+\blindtext
 
-\chapter{Analyse}
-
+\blindtext
 
 \chapter{Fazit}
 
+\section{Literatur}
+\subsection{Literatur vor 1900}
+
+
+\subsubsection{Europa}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
+
+\subsubsection{Asien}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
+
+\subsubsection{Amerika}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
+
+\subsection{Literatur nach 1900}
+
+\subsubsection{Europa}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
+
+\subsubsection{Asien}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
+
+\subsubsection{Amerika}
+
+\blindtext[3]
+
+\blindtext[3]
+
+\blindtext[3]
+
+
+\section{Stand der Forschung}
+
+\blindtext 
+
+\blindtext
+
+\blindtext
 
 \end{document}
