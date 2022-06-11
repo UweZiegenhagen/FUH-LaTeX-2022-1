@@ -1,16 +1,16 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
+% arara: biber
 % arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman,parskip=half]{scrbook}
 
 \input{preamble}	
 
 
-
-\title{Hallo FUH}
-\author{Uwe Ziegenhagen}
-
 %\includeonly{Kapitel03} % berücksichtige nur Kapitel03, lasse aber die Seitenzahlen so, als ob alle Kapitel inkludiert sind.
+
+\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
+\addbibresource{Literaturverzeichnis.bib}
 
 \begin{document}
 
@@ -56,7 +56,7 @@ Zweitgutachterin: & Prof. Dr. Marie Curie \\
 
 \chapter{fsdfgsd}
 
-
+\cite{knuth:1984}
 
 \include{Kapitel01}
 
@@ -64,6 +64,6 @@ Zweitgutachterin: & Prof. Dr. Marie Curie \\
 
 \include{Kapitel03}
 
-
+\printbibliography
 
 \end{document}
