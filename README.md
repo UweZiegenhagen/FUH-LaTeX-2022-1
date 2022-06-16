@@ -10,7 +10,7 @@ git installieren und dann auf der Kommandozeile
 
 git clone https://github.com/UweZiegenhagen/FUH-LaTeX-2022-1.git
 
-Updates holt man so, dabei überschreibt man lokal geänderte Dateien
+Updates holt man wie folgt, lokal geänderte Dateien werden dabei überschrieben!
 
 git fetch --all
 git reset --hard origin/master
@@ -24,24 +24,6 @@ Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir Big
 * **Tag 3**: 18.06.2021
 
 Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 16:20 Uhr, in Summe also 16 Stunden.
-
-## Agenda der einzelnen Termine
-
-### Tag 1
-
-* Das erste LaTeX-Dokument
-* Standard- und KOMA-Klassen
-* Chapter, section und co.
-* Bilder einbauen
-* Tabellen
-* Inhalts-, Bild- und Tabellenverzeichnisse
-
-### Tag 2
-
-
-
-### Tag 3
-
 
 ## Was wird benötigt
 
@@ -96,11 +78,12 @@ Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 * Lebensläufe mit ``moderncv``
 * Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
 * Einheitensatz mit ``siunitx``
+* Grafiken erstellen mit LaTeX-Paketen
+* Kurzeinführung ``TikZ``
 * Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
-* Grafiken erstellen mit LaTeX-Paketen, Kurzeinführung ``TikZ``
 * Grundlagen der Automatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Frage-und-Antwort-Teil
