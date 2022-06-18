@@ -15,6 +15,10 @@ Updates holt man wie folgt, lokal geänderte Dateien werden dabei überschrieben
 git fetch --all
 git reset --hard origin/master
 
+In den nächsten Monaten wird das Repository noch öffentlich zugänglich sein,
+irgendwann werde ich es auf privat setzen. Ihr könnt es gern forken, aber dann
+vorzugsweise in ein privates Repo.
+
 ## Der Kurs
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton, der Link wird vorab per E-Mail versandt.
@@ -75,12 +79,11 @@ Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 ### Tag 3 - Bibliografien und Präsentationen
 
 * Zusammenfassung vom 2. Termin, Wiederholung
-* Lebensläufe mit ``moderncv``
-* Andere Editoren: ``TeXworks`` und ``Visual Studio Code``
+* Syntaxhighlighting mit pygments
 * Einheitensatz mit ``siunitx``
-* Grafiken erstellen mit LaTeX-Paketen
-* Kurzeinführung ``TikZ``
-* Fuß- und Randnoten -- ``\footnote`` and ``\marginpar``
+* Editoren: ``TeXworks`` und ``Visual Studio Code``
+* Lebensläufe mit ``moderncv`` und ``europecv``
+* Grafiken erstellen mit LaTeX-Paketen, Kurzeinführung ``TikZ``
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
@@ -94,7 +97,7 @@ Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut.
 Empfohlen werden:
 
 * Alle Bücher von Herbert Voß (https://www.lehmanns.de/search/quick?PHPSESSID=mi28bh61dhv2nu8keg4hjnkunumgi5ah&mediatype_id=&q=herbert+vo%C3%9F), insbesondere die Einführung
-* Der LaTeX Begleiter in der 2. Auflage (ist auch nicht mehr brandaktuell, bietet aber einen guten Überblick über LaTeX)
+* Der LaTeX Begleiter in der 2. Auflage (ist auch nicht mehr brandaktuell, bietet aber einen guten Überblick über LaTeX). Ist auch beispielsweise über Medimops extrem günstig zu bekommen.
 
 ## Weitere Links
 
