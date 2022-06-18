@@ -1,0 +1,21 @@
+\documentclass[ngerman,12pt]{scrartcl}
+
+\usepackage[]{babel}
+\usepackage[]{ifthen}
+
+\newboolean{noten}
+\setboolean{noten}{false} % boolvar=true or false
+
+\begin{document}
+
+\ifthenelse{\boolean{noten}}
+{1,0}
+{bestanden}
+
+
+
+\ifthenelse{\boolean{noten}}
+{1,0}
+{bestanden}
+
+\end{document}

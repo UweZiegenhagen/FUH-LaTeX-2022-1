@@ -1,0 +1,27 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[parskip=half,fontsize=12pt,ngerman]{scrartcl}
+ 
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor} 
+ 
+\usepackage{blindtext}
+ 
+\usepackage{fontspec}%
+\setmainfont[%
+ItalicFont={Source Sans Pro Italic},
+BoldFont={Source Sans Pro Bold},
+BoldItalicFont={Source Sans Pro Bold Italic}]
+{Source Sans Pro}%
+ 
+\usepackage{microtype}
+\begin{document}
+
+\blindtext[5]
+
+
+\end{document}

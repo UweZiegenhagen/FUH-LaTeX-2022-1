@@ -1,0 +1,80 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{tikz}
+
+% Sucht nach minimaltikz.pdf im Netz
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5,
+    punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
+]
+
+\draw[help lines,red,thick] (0,0) grid (10,5);
+
+\draw [->,thin,blue]  (0,0) -- (5,3.1415927);
+
+\draw [very thick] (1,0) -- (2,1) -- (3,3);
+
+\draw [dashed, ultra thick] (8,2) -- (2,4);
+
+\node [punkt] at (8,4){Knoten};
+
+\node [below] at (5,1) {unten};
+\node [above] at (5,1) {oben};
+\node [left] at (5,1) {links};
+\node [right] at (5,1) {rechts};
+
+\node (A) at (9,1){AA};
+\node [draw] (B) at (1,3){BB};
+\draw (A) -- (B);
+
+\draw[line width=1pt] (1,1) .. controls (2,4) and (4,1) .. (8,1);
+
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=.5,
+    punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
+]
+
+
+\draw[help lines,red,thick] (0,0) grid (8,5);
+\draw[help lines,red,thick] (9,0) grid (15,5);
+
+
+\end{tikzpicture}
+
+
+
+\end{document}
+
+
+\draw [->,very thick] (0,0) -- (5,0);
+\draw [->,very thick] (0,0) -- (0,5);
+\draw [very thick] (0,0) -- (1,2) -- (3,3);
+\draw [dashed, ultra thick] (5,5) -- (2,2);
+
+\node  [punkt] at (7,3){Knoten};
+
+\node [below] at (4,2) {below};
+\node [above] at (4,2) {above};
+\node [left] at (4,2) {left};
+\node [right] at (4,2) {right};
+
+\node (A) at (9,1){A};
+\node[draw] (B) at (8,4){B};
+\draw (A) -- (B);
+
+
+\begin{tikzpicture}[scale=1.5]
+\draw[help lines,gray,thin] (0,0) grid (10,5);
+\draw[line width=1pt] (0,0) .. controls (2,3) and (4,1) .. (5,4); % cubic bezier curve
+
+\draw (0,0) -- (2,3); % (0,0) to 2. point
+\draw (5,4) -- (4,1); % (1,1) to 3. point
+\end{tikzpicture}

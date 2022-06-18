@@ -1,0 +1,31 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{siunitx}
+
+\begin{document}
+
+Hallo, ich bin eine \num{4646543,1415927} Zahl.
+
+Ich \si{m^2} bin eine Einheit, ich \si{\kilo\m^2} \si{\kilo\per m^2}
+
+Ich bin eine Einheit \si{\meter/\second^2} \si{\nano\meter\per\second^2}
+
+\SI{3.1415927}{\kilo\meter\per\second^2}
+
+\ang{90}
+
+\SIrange{10}{20}{\meter}
+
+\numrange{10}{20}
+
+\numlist{10;20;30;40}
+
+\qty[per-mode = fraction]{1,345}{\coulomb\per\mole}
+
+
+\SI[per-mode = fraction]{3.1415927}{\meter\per\second^2}
+
+\end{document}

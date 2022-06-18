@@ -1,0 +1,33 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{microtype}
+
+\usepackage{tcolorbox}
+
+\begin{document}
+
+\begin{tcolorbox}
+Hallo Fernuni Hagen!
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\blindtext
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title={\bfseries Das ist die Überschrift der Box}]
+\blindtext
+\end{tcolorbox}
+
+
+\end{document}

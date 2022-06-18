@@ -1,0 +1,22 @@
+%Quelle https://latexdraw.com/bar-charts-in-latex-step-by-step-tikz-tutorial/
+\documentclass[border=0.2cm]{standalone}
+ 
+% Bar chart drawing library 
+\usepackage{pgfplots} 
+ 
+\begin{document}
+ 
+\begin{tikzpicture}
+ 
+\begin{axis} [ybar]
+\addplot coordinates {
+    (1,5) 
+    (2,8) 
+    (3,2) 
+    (4,1)
+};
+\end{axis}
+ 
+\end{tikzpicture}
+ 
+\end{document}

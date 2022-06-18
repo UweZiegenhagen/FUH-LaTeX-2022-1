@@ -1,0 +1,30 @@
+%!TEX TS-program = lualatex
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{microtype}
+
+\usepackage{fontspec}
+
+\usepackage{unicode-math}
+\setmathfont{Cambria Math} % Call by font name
+ 
+\setmainfont{Calibri}
+%\setsansfont{Cabin}[Scale=MatchLowercase] % sf
+%\setmonofont{Inconsolatazi4}[Scale=MatchLowercase] % tt
+
+\newfontfamily{\mistral}{Mistral}
+
+\setkomafont{sectioning}{\mistral}
+
+\begin{document}
+
+{\mistral \blindtext}
+
+\blinddocument
+
+\blindmathpaper
+
+\end{document}

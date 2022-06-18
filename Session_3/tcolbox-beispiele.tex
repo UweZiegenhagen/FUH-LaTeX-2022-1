@@ -1,0 +1,33 @@
+
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage[]{tcolorbox}
+\usepackage[]{blindtext}
+
+\begin{document}
+
+\begin{tcolorbox}
+Hallo Fernuni Hagen!
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!50]
+Hallo Fernuni Hagen!
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow!25,colframe=blue]
+Hallo Fernuni Hagen!
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow!25,colframe=blue,title={Meine Überschrift}]
+Hallo Fernuni Hagen! \blindtext[3]
+\end{tcolorbox}
+
+\end{document}
